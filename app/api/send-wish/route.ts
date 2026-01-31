@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   try {
 
     let reqObj = {
-      from: process.env.TWILIO_WHATSAPP_FROM!, // sandbox number
+      from: "whatsapp:+14155238886",  //process.env.TWILIO_WHATSAPP_FROM!, // sandbox number
       to: `whatsapp:+91${mobile}`, // your joined number
       body: `🎉 Happy Birthday ${name}!\n\nWarm wishes,\nMani Prakash Singhal`
     }
