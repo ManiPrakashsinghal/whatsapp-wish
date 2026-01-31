@@ -14,7 +14,10 @@ export async function POST(req: Request) {
     let reqObj = {
       from: "whatsapp:+14155238886",  //process.env.TWILIO_WHATSAPP_FROM!, // sandbox number
       to: `whatsapp:+91${mobile}`, // your joined number
-      body: `🎉 Happy Birthday ${name}!\n\nWarm wishes,\nMani Prakash Singhal`
+      body: `🎉 Happy Birthday ${name}!\n\nWarm wishes,\nMani Prakash Singhal`,
+      mediaUrl: [
+        "https://whatsapp-wish.vercel.app/birthday_wish.pdf"
+      ]
     }
     console.log(reqObj)
 
